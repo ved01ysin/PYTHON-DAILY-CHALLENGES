@@ -1,60 +1,54 @@
-name = input("Enter your full name: ")
-L = 0
-for i in range(len(name)):
-    if name[i] != " ":
-        L = L + 1
-PLI = L % 3
-
-n = int(input("Enter number of requests: "))
-req = []
-for i in range(n):
-    number = int(input("Enter request value (0 to 50): "))
-    req.append(number)
-
-low = []
-moderate = []
-high = []
-invalid = []
-valid_req = 0
-removed = 0
-
-for i in range(len(req)):
-    number = req[i]
-    if number < 0:
-        invalid.append(number)
-    elif number == 0:
-        pass
-    elif number <= 20:
-        low.append(number)
-        valid_req = valid_req + 1
-    elif number <= 50:
-        moderate.append(number)
-        valid_req = valid_req + 1
-    else:
-        high.append(number)
-        valid_req = valid_req + 1
-
-if PLI == 0:
-    removed = len(low)
-    low = []
-    print("PLI is", PLI)
-    print("Rule A: Removed Low Demand")
-elif PLI == 1:
-    removed = len(high)
-    high = []
-    print("PLI is", PLI)
-    print("Rule B: Removed High Demand")
-else:
-    removed = len(low) + len(high)
-    low = []
-    high = []
-    print("PLI is", PLI)
-    print("Rule C: Keep Only Moderate Demand")
-
-print("L is", L)
-print("Valid requests are", valid_req)
-print("Removed requests are", removed)
-print("Low Demand:", low)
-print("Moderate Demand:", moderate)
-print("High Demand:", high)
-print("Invalid Requests:", invalid)
+low_risk=[] 
+medium_risk=[] 
+high_risk=[] 
+critical_risk=[] 
+ 
+valid=0 
+ignore=0 
+remove=0 
+ 
+D=int(input("Enter last digit of your Registerion Number: ")) 
+n=int(input("Enter number of activity scores: ")) 
+ 
+scores=[] 
+ 
+for i in range(n): 
+    m=int(input("Enter score: ")) 
+    scores=scores+[m] 
+ 
+for i in range(len(scores)): 
+ 
+    if scores[i]<0: 
+        ignore=ignore+1 
+    else: 
+        valid=valid+1 
+        if scores[i]<=30: 
+            low_risk=low_risk+[scores[i]] 
+        elif scores[i]<=60: 
+            medium_risk=medium_risk+[scores[i]] 
+        elif scores[i]<=100: 
+            high_risk=high_risk+[scores[i]] 
+        else: 
+            critical_risk=critical_risk+[scores[i]] 
+ 
+print("\nRegister Digit (D):",D) 
+print("Low Risk:",low_risk) 
+print("Medium Risk:",medium_risk) 
+print("High Risk:",high_risk) 
+print("Critical Risk:",critical_risk) 
+ 
+if D%2==0: 
+    remove=len(low_risk) 
+    low_risk=[] 
+else: 
+    remove=len(critical_risk) 
+    critical_risk=[] 
+ 
+print("\nAfter Personalized Filtering:") 
+print("Low Risk:",low_risk) 
+print("Medium Risk:",medium_risk) 
+print("High Risk:",high_risk) 
+print("Critical Risk:",critical_risk) 
+print("\nTotal Valid Entries:",valid) 
+print("Ignored Entries:",ignore) 
+print("Removed Due to Personalization:",remove) 
