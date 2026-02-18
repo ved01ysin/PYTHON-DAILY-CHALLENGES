@@ -1,4 +1,4 @@
-name = input("Enter your full name: ")
+name = input("Enter the full name: ")
 L = 0
 for i in range(len(name)):
     if name[i] != " ":
