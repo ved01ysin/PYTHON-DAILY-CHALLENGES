@@ -1,136 +1,141 @@
-📘 PYTHON DAILY CHALLENGES
+🐍 Python 6 Day Challenge
 
-This repository contains my daily Python practice programs developed to strengthen my understanding of core programming concepts.
+Welcome to my Python Daily Challenge repository!
+This repository documents my journey of solving one Python problem each day to improve logical thinking and programming skills.
 
-All programs are written strictly using basic Python syntax as per academic rules, without using advanced features.
+📅 Progress Tracker
+Day	Challenge	Status
+1	Input & Conditional Analyzer	✅ Complete
+2	Loop-Based Processing System	✅ Complete
+3	List Data Analyzer	✅ Complete
+4	String Manipulation Engine	✅ Complete
+5	Pattern & Logic Builder	✅ Complete
+6	Smart Transaction Risk Detector	✅ Complete
+📚 Structure
 
-🎯 Objective
+Each day's solution includes:
 
-The purpose of this repository is to:
+Problem Statement – Description of the challenge
 
-Improve logical thinking
+Solution – Python implementation
 
-Practice real-world validation problems
+Concepts Used – Key programming concepts applied
 
-Strengthen basics of Python
+Logic Used – Step-by-step approach
 
-Maintain daily coding consistency
+🎯 Goals
 
-🧠 Concepts Used
+Solve Python problems daily
 
-Input and Output
+Strengthen problem-solving skills
 
-String handling
+Build strong fundamentals in programming
 
-Conditional statements
+Write clean and structured code
 
-Logical operators
+📝 Daily Challenges
+Day	Challenge	Status
+1	Input & Conditional Analyzer	✅ Complete
+2	Loop-Based Processing System	✅ Complete
+3	List Data Analyzer	✅ Complete
+4	String Manipulation Engine	✅ Complete
+5	Pattern & Logic Builder	✅ Complete
+6	Smart Transaction Risk Detector	✅ Complete
+📖 Concepts Used (Day-wise)
+🔹 Day 1 – Input & Conditional Analyzer
+
+Input handling
+
+Conditional statements (if-else)
 
 Basic validation logic
 
-❌ No loops
-❌ No lists or dictionaries
-❌ No regular expressions
-❌ No advanced libraries
+Output formatting
 
-📂 Repository Structure
-PYTHON-DAILY-CHALLENGES
-│
-├── DAY
-│   ├── DAY1.py
-│   └── DAY2.py
-│
-└── README.md
+🔹 Day 2 – Loop-Based Processing System
 
-📅 Day 1 – User Profile Validation
-Description
+for loops
 
-This program validates a user profile based on given rules.
+Iteration over data
 
-Validation Rules
+Conditional checks inside loops
 
-Name should not start or end with space
+Repetitive task handling
 
-Name must contain at least one space
+🔹 Day 3 – List Data Analyzer
 
-Email must contain exactly one @ and at least one .
+Lists for storing data
 
-Mobile number must:
+Iteration through lists
 
-be exactly 10 digits
+Basic filtering logic
 
-contain only digits
+Aggregation (sum/count)
 
-not start with 0
+🔹 Day 4 – String Manipulation Engine
 
-Age must be between 18 and 60
+String handling
 
-Output
+Indexing and slicing
 
-User Profile is VALID
+Character-level operations
 
-User Profile is INVALID
+String-based conditions
 
-🔐 Day 2 – Smart Registration System
-Description
+🔹 Day 5 – Pattern & Logic Builder
 
-This program simulates a university smart registration system and validates student credentials.
+Nested loops
 
-Validation Rules
-Student ID
+Conditional formatting
 
-Format: CSE-XXX
+Pattern generation
 
-Must start with CSE
+Structured output logic
 
-4th character must be -
+🔹 Day 6 – Smart Transaction Risk Detector 💳
 
-Last three characters must be digits
+Lists for storing transactions
 
-Email ID
+Dictionary for classification
 
-Must contain @ and .
+List comprehension for filtering
 
-Must not start or end with @
+Tuple for summary storage
 
-Must end with .edu
+Conditional logic for classification
 
-Password
+Logic Highlights:
 
-Minimum length of 8 characters
+Categorized transactions into normal, large, high-risk, and invalid
 
-First character must be uppercase
+Calculated total and count of valid transactions
 
-Must contain at least one digit
+Checked:
 
-Referral Code
+Frequent transactions (>5)
 
-Format: REF##@
+Large spending (>5000)
 
-Must start with REF
+High-risk transactions (≥3)
 
-Next two characters must be digits
+Counted active conditions to determine final risk level
 
-Must end with @
+📈 Learning Outcomes
 
-Output
+Improved logical thinking and problem decomposition
 
-APPROVED
+Strengthened understanding of Python fundamentals
 
-REJECTED
+Gained experience in handling real-world style problems
 
-🛠 Tools Used
+Learned to write clean, structured, and readable code
 
-Python
+🛠️ Technologies Used
 
-Visual Studio Code
+Python 3.x
 
-Git
+Standard Python libraries
 
-GitHub
-
-👨‍🎓 Author
+👨‍💻 Author
 
 Vedant Singh
-B.Tech – Computer Science Engineering
-Second Year Student
